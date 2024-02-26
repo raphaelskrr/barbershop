@@ -1,0 +1,369 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Epilogue", sans-serif;
+}
+
+html, body{
+  overflow-x: hidden !important; 
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #0B090A;
+  padding: 2.9rem 2.0rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  
+}
+
+.apresentation {
+  background-color: #0B090A;
+  color: white;
+  padding: 2rem 2rem 0 2rem;
+}
+
+main h1 {
+  font-size: 3.2rem;
+  line-height: 4.0rem;
+  font-weight: bold;
+}
+
+
+
+
+
+main p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 200;
+  margin-top: 1.6rem;
+}
+
+main a {
+  color: white;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3.2rem;
+}
+
+.apresentation img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+
+
+.services, .location {
+  padding: 4.8rem 2.0rem;
+}
+
+.services span, .location span {
+  color: #E5383B;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-weight: bold;
+}
+
+.services h3, .location h3 {
+  font-size: 2.8rem;
+  line-height: 3.6rem;
+  margin-top: 1.6rem;
+}
+
+
+
+.card {
+  background-color: #F5F3F4;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+
+
+.card_text {
+  padding: 3.2rem;
+}
+
+.card_text h3 {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: bold;
+}
+
+.card_text p {
+color: #161A1D;
+font-size: 1.6rem;
+line-height: 2.4rem;
+font-weight: 500;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  padding: 4.8rem 2.0rem;
+}
+
+address {
+display: flex;
+align-items: center;
+}
+
+footer {
+  background-color: #161A1D;
+  padding: 4.8rem 2.0rem;
+}
+
+footer p {
+  color: white;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #FFFAF1;
+  font-weight: 200;
+  margin-top: 1rem;
+}
+
+footer img {
+  margin-top: 2rem;
+}
+
+@keyframes move-right {
+  from {
+    transform: translateX(-100%)
+  }
+ }
+
+ main h1 {
+  animation: move-right 2s;
+ }
+
+
+ @keyframes move-left {
+  from {
+    transform: translateX(100%)
+  }
+ }
+
+ main  p, main img {
+  animation: move-left 2s;
+ }
+
+ @keyframes move-down {
+  from {
+    transform: translateY(-100%)
+  }
+ }
+
+ header img {
+  animation: move-down 2s;
+ }
+
+ @keyframes move-up {
+  from {
+    transform: translateY(100%)
+  }
+ }
+
+ header a {
+  animation: move-up 2s;
+ }
+
+ @keyframes rotacionar {
+  from {
+    transform:rotateZ(-8deg)
+  }
+ }
+
+ main a {
+  animation: rotacionar 2s;
+ }
+ 
+ @keyframes teste {
+  from {
+    transform:translate3d()
+  }
+ }
+
+@media (min-width: 40em) {
+ header {
+  padding: 2.4rem 7.2rem;
+  justify-content: center;
+  gap: 65rem;
+  position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    min-width: 100%
+ }
+
+ 
+
+ header img {
+  height: 3.2rem;
+ }
+ 
+ header a {
+  padding: 1.2rem 2.4rem;
+ }
+
+ header a:hover {
+  background-color: #2b2626;
+}
+
+ main h1 {
+  font-size: 5.6rem;
+  line-height: 6.4rem;
+  margin-top: 9.6rem;
+  font-weight: bold;
+ }
+
+ main p {
+  font-size: 2.0rem;
+  line-height: 2.8rem;
+  font-weight: 200;
+ }
+
+ main a:hover {
+  background-color: #530405;
+ }
+
+ .apresentation {
+  padding: 0 7.2rem 0 7.2rem;
+  display: flex;
+  justify-content: center;
+ }
+
+ .apresentation-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+ }
+
+ .services {
+  padding: 0 7.2rem 0 7.2rem;
+  margin-top: 4.8rem;
+ }
+
+ .cards-list {
+  display: flex;
+  padding: 0 7.2rem 0 7.2rem;
+  gap: 4rem;
+  margin-top: 4rem;
+ }
+
+ .card {
+  margin-bottom: 9.6rem;
+  align-items: center;
+  margin-top: 1rem;
+ }
+
+ .image {
+  max-width: 35.7rem;
+  max-height: 32.4rem;
+  display: block;
+ }
+ 
+ .image img {
+  max-width: 100%;
+ }
+
+ 
+
+ .card img:hover {
+  filter: hue-rotate(7deg) contrast(101%) saturate(200%);
+  transform: scale(1.1) rotate(-2deg);
+  }
+
+ .location {
+  padding:9.6rem 7.2rem;
+  background-color: #F5F3F4;
+ }
+
+  footer {
+  padding: 4.8rem 7.2rem;
+  background-color: #0B090A;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+ 
+ 
+ @keyframes move-right {
+  from {
+    transform: translateX(-100%)
+  }
+ }
+
+ main h1 {
+  animation: move-right 2s;
+ }
+
+
+ @keyframes move-left {
+  from {
+    transform: translateX(100%)
+  }
+ }
+
+ main  p, main img {
+  animation: move-left 2s;
+ }
+
+ @keyframes move-down {
+  from {
+    transform: translateY(-100%)
+  }
+ }
+
+ header img {
+  animation: move-down 2s;
+ }
+
+ @keyframes move-up {
+  from {
+    transform: translateY(100%)
+  }
+ }
+
+ header a {
+  animation: move-up 2s;
+ }
+
+ @keyframes rotacionar {
+  from {
+    transform:rotateZ(-8deg)
+  }
+ }
+
+ main a {
+  animation: rotacionar 2s;
+ }
+ 
+ @keyframes teste {
+  from {
+    transform:translate3d()
+  }
+ }
+
+ 
+}
